@@ -18,7 +18,7 @@ node() {
         }
 
         stage('deploy') {
-            values = docker_params()
+           // values = docker_params()
            // jobName = sh(returnStdout: true, script: "echo $JOB_NAME").split('/')[-1].trim().toLowerCase()
             currentWs = sh(returnStdout: true, script: 'pwd').trim()
            // ansiblePlaybook = "$currentWs/kubernetes/ansible/deploy_core_service.yml"
